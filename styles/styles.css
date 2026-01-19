@@ -79,7 +79,6 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center ;
-    /* position: relative; */
 
 }
 .banner-circle{
@@ -117,6 +116,9 @@ nav{
     display: flex;
     gap: 10px;
 }
+
+        /* main section  */
+
 main{
     margin: 0 auto;
     /* max-width: 1600px; */
@@ -207,6 +209,101 @@ main{
 .card h2{
     margin: 1rem auto;
 }
+.feature-section{
+    margin: 100px;
+}
+.feature-section h1{
+    color: white;
+    font-size: 3rem;
+    margin:50px;
+}
+.feature-episodes{
+    max-width: 1200px;
+}
+.feature-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-video{
+    width: 380px;
+    border-radius: 20px;
+}
+.feature-image{
+    position: relative;
+}
+.play-btn{
+    color: white;
+    background: linear-gradient(to top, #F7E93F,#FB09B4,#9100F8);
+    width: 18px;
+    padding: 10px;
+    border-radius: 24px;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 160px;
+
+}
+.feature-text{
+        background-color: #351165;
+        text-align: left;
+        height: 170px;
+        padding: 25px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+}
+.feature-text h3{
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+.feature-text p{
+    color: white;
+    font-size: 0.8rem;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.feature-text h5{
+    color: #00ff88;
+}
+.host-card{
+    display: flex;
+    max-width: 1200px;
+    gap: 30px;
+    padding: 40px;
+    background-color: #351165;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+}
+.host-description {
+   display: block;
+    justify-content: left;
+    text-align: left;
+}
+.host-description h1{
+       margin: 0px 20px;
+}
+.host-description p{
+       margin: 20px;
+       color: white;
+       line-height: 2;
+}
+.host-links{
+        display: flex ;
+        justify-content: center;
+        gap: 10px;
+        width: 184px;
+        margin-left: 15px;
+        
+}
+.host-link{
+    height: 15px;
+    width: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
 @media screen and (max-width:576px) {
                 nav{
                     gap: 240px;
@@ -228,5 +325,20 @@ main{
                 }
                 .card{
                     margin-bottom: 20px;
+                }
+                .feature-links{
+                    display: block;
+                }
+                .feature-video{
+                    margin-bottom: 20px;
+                }
+                .host-card{
+                    display: block;
+                }
+                .host-description{
+                    text-align: center;
+                }
+                .host-description h1{
+                    font-size: 2rem;
                 }
 }
