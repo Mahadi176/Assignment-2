@@ -1,0 +1,131 @@
+*{  margin: 0 auto;
+    font-family:sans-serif;
+}
+
+/* Shared Style  */
+.btn-gradient
+{   color: white;
+    background: linear-gradient(to top right, #F7E93F,#FB09B4,#9100F8);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.wave{
+        background: linear-gradient(to top, #F7E93F,#FB09B4,#9100F8);
+        background-clip: text;
+        color: transparent;
+}
+.btn-green{
+    color: #00ff88;
+    border: 1px solid #00ff88;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-evenly;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 1.5rem;
+}
+/* header section  */
+header{
+    margin: 0 auto;
+    background-color: #1A0B2E;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1A0B2E ;
+    padding: 1.5rem;
+
+}
+.nav-title{
+    color: white;
+    font-weight: 700;
+}
+.burger{
+    display: none;
+}
+.links{
+    display: flex;
+    gap: 2rem;
+}
+.links li{
+    list-style: none;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.banner{
+    height: 100vh;
+    max-width: 1600px;
+    background: url("../assets/hero-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    position: relative;
+
+}
+.banner-circle{
+
+    width: 350px;
+    position:absolute;
+    margin-top: -250px;
+}
+.banner-mike{
+    position: absolute;
+    margin-top: -250px;
+}
+.banner-new{
+    position: absolute;
+    background-color: #00ff88;
+    border-radius: 1rem;
+    width: 2rem;
+    padding: 5px 10px;
+    margin-top: -500px;
+    margin-right: -250px;
+}
+.banner-title{
+    margin-top: 300px;
+    font-size: 2rem;
+    font-weight: 700px;
+    color: white;
+}
+.banner-info{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    margin: 30px;
+}
+.banner-btn{
+    display: flex;
+    gap: 10px;
+}
+@media screen and (max-width:576px) {
+                nav{
+                    gap: 240px;
+                }
+
+                 .nav-btn, .nav-links{
+                    display: none;
+                }
+                .burger{
+                    display: block;
+                }
+}
