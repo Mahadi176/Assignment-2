@@ -69,7 +69,7 @@ nav{
     font-size: 1rem;
 }
 .banner{
-    height: 100vh;
+    height: 48rem;
     max-width: 1600px;
     background: url("../assets/hero-bg.png");
     background-position: center;
@@ -79,7 +79,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center ;
-    position: relative;
+    /* position: relative; */
 
 }
 .banner-circle{
@@ -117,6 +117,54 @@ nav{
     display: flex;
     gap: 10px;
 }
+main{
+    margin: 0 auto;
+    /* max-width: 1600px; */
+    text-align: center;
+    background-color: #1A0B2E;
+    margin-top: -1rem;
+    padding-top: 3rem;
+}
+.about-section{
+    max-width: 1200px;
+}
+.about-text{
+    /* max-width: 800px; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    padding-bottom: 80px;
+    border-bottom: 1px solid gray;
+}
+.about-text h1,.card-title{
+    font-size: 3rem;
+    color: white;
+}
+.about-text p{
+    max-width: 800px;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 2;
+
+}
+.about-data{
+    display: grid;
+    padding: 6rem;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem;
+}
+.about-data-info h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #00ff88;
+}
+.about-data-info h4{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
 @media screen and (max-width:576px) {
                 nav{
                     gap: 240px;
@@ -127,5 +175,9 @@ nav{
                 }
                 .burger{
                     display: block;
+                }
+
+                .about-data{
+                    grid-template-columns: repeat(2,1fr);
                 }
 }
