@@ -164,7 +164,49 @@ main{
     font-weight: 400;
     color: white;
 }
-
+.card-section{
+    max-width: 1200px;
+    padding: 7rem auto;
+}
+.card-title{
+    margin: 3rem;
+}
+.cards{
+    display: grid ;
+    gap: 20px;
+    grid-template-areas: "card1 card2 card2"
+                         "card1 card3 card3"
+                         "card4 card4 card5"
+    ;
+}
+#A{
+    grid-area: card1 ;
+}
+#B{
+    grid-area: card2 ;
+}
+#C{
+    grid-area: card3 ;
+}
+#D{
+    grid-area: card4 ;
+}
+#E{
+    grid-area: card5 ;
+}
+.card{
+    text-align: left;
+    padding: 40px;
+    color: white;
+    background-color: #351165;
+    justify-items: stretch;
+    width:100%;
+    border-radius: 2rem;
+    box-sizing: border-box;
+}
+.card h2{
+    margin: 1rem auto;
+}
 @media screen and (max-width:576px) {
                 nav{
                     gap: 240px;
@@ -179,5 +221,12 @@ main{
 
                 .about-data{
                     grid-template-columns: repeat(2,1fr);
+                }
+                .cards{
+                    display: block;
+                    padding: 1rem;
+                }
+                .card{
+                    margin-bottom: 20px;
                 }
 }
