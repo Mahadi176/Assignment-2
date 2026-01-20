@@ -154,7 +154,6 @@ main{
 }
 .about-data{
     display: grid;
-    padding: 6rem;
     grid-template-columns: repeat(4,1fr);
     gap: 5rem;
 }
@@ -212,12 +211,12 @@ main{
     margin: 1rem auto;
 }
 .feature-section{
-    margin: 100px;
+    margin: 100px 0px;
 }
 .feature-section h1{
     color: white;
     font-size: 3rem;
-    margin:50px;
+    margin:50px auto;
 }
 .feature-episodes{
     max-width: 1200px;
@@ -231,9 +230,11 @@ main{
 .feature-video{
     width: 380px;
     border-radius: 20px;
+    position: relative;
+    margin: 0 auto;
 }
 .feature-image{
-    position: relative;
+    /* position: relative; */
 }
 .play-btn{
     color: white;
@@ -338,10 +339,10 @@ footer{
 }
 
 @media screen and (max-width:576px) {
-                nav{
-                    gap: 240px;
-                }
-
+                 nav{
+                    justify-content: space-between;
+                    padding: 24px 5px;
+                 }
                  .nav-btn, .nav-links{
                     display: none;
                 }
@@ -351,6 +352,7 @@ footer{
 
                 .about-data{
                     grid-template-columns: repeat(2,1fr);
+                    gap: 10px;
                 }
                 .cards{
                     display: block;
@@ -361,12 +363,22 @@ footer{
                 }
                 .feature-links{
                     display: block;
+                    max-width: 380px;
+                    padding: 0;
                 }
                 .feature-video{
+                    max-width: 350px;
                     margin-bottom: 20px;
+                    padding: auto;
+                    /* margin-left: -50px; */
+                }
+                .feature-image img{
+                    max-width: 350px;
                 }
                 .host-card{
                     display: block;
+                    padding: auto;
+                    margin: 20px;
                 }
                 .host-description{
                     text-align: center;
@@ -375,6 +387,9 @@ footer{
                     font-size: 2rem;
                 }
                 .footer-links{
+                    max-width: 350px;
                     grid-template-columns: repeat(2,1fr);
+                    padding: 10px 0px;
+                    margin: 10px 0px;
                 }
 }
