@@ -125,7 +125,9 @@ main{
     text-align: center;
     background-color: #1A0B2E;
     margin-top: -1rem;
+    margin-bottom: -100px;
     padding-top: 3rem;
+    padding-bottom: 80px;
 }
 .about-section{
     max-width: 1200px;
@@ -304,6 +306,37 @@ main{
     border-radius: 25px;
     border: 1px solid gray;
 }
+footer{
+    margin: 0 auto;
+    background-color: #1A0B2E;
+}
+.footer-section{
+    height: 412px;
+    max-width: 1600px;
+    background: url("../assets/footer-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section h1{
+    padding-top: 110px;
+    font-size: 3rem;
+    color: white;
+}
+.footer-section h5{
+    color: white;
+}
+.footer-links{
+    padding: 50px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 400px;
+}
+
 @media screen and (max-width:576px) {
                 nav{
                     gap: 240px;
@@ -340,5 +373,8 @@ main{
                 }
                 .host-description h1{
                     font-size: 2rem;
+                }
+                .footer-links{
+                    grid-template-columns: repeat(2,1fr);
                 }
 }
